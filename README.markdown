@@ -23,7 +23,7 @@ Lastly (and perhaps, most importantly) It is completely cross platform. It works
 
 # Installation
 ## Requirements
-To make all the plugins work, specifically [neocomplete](github.com/Shougo/neocomplete.vim), you need [vim with lua](https://github.com/Shougo/neocomplete.vim#requirements).
+To make all the plugins work, specifically [neocomplete](https://github.com/Shougo/neocomplete.vim), you need [vim with lua](https://github.com/Shougo/neocomplete.vim#requirements).
 
 ## Linux, \*nix, Mac OSX Installation
 
@@ -203,6 +203,19 @@ You may also want to update your `README.markdown` file so that the `bootstrap.s
 file to pull down your fork.
 
 For an example of a fork of spf13-vim that provides customization in this manner see [taxilian's fork](https://github.com/taxilian/spf13-vim).
+
+### Easily Editing Your Configuration
+
+`<Leader>ev` opens a new tab containing the .vimrc configuration files listed above. This makes it easier to get an overview of your
+configuration and make customizations.
+
+`<Leader>sv` sources the .vimrc file, instantly applying your customizations to the currently running vim instance.
+
+These two mappings can themselves be customized by setting the following in .vimrc.before.local:
+```bash
+let g:spf13_edit_config_mapping='<Leader>ev'
+let g:spf13_apply_config_mapping='<Leader>sv'
+```
 
 # Plugins
 
